@@ -1,4 +1,4 @@
-# Github bei All-Inkl2
+# Github bei All-Inkl2s
 Notwendig: All-Inkl SSH Zugang, Github.com Account
 
 ## auf dem Server anmelden
