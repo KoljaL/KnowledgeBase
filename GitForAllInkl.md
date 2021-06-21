@@ -37,7 +37,7 @@ Wenn die Ausgabe `Identity added: ...` ausgibt, den `privat_key` auslesen und ko
 
 Dann auf github.com unter `Settings` - `SSH and GPG keys` - `New SSH key` den `privat_key` unter Angabe eines sinnvollen Titels einfügen.  
 
-Zur Kontrolle den Zugang testen (ggf mit Enter bestätigen):  
+Zur Kontrolle den Zugang testen (ggf mit Enter bestätigen):   
 `ssh -T git@github.com`  
 
 
