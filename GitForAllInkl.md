@@ -48,7 +48,7 @@ in das Vezeichnis wechseln, dass das neue Repository werden soll:
 
 Git für das aktuelle Verzeichnis initialisieren:   
 `git init .`  
-und alle darin enthaltenen Dateien dem Repo hinzufügen:  
+und alle darin enthaltenen Dateien dem Repo hinzufügen:   
 `git add .`  
 
 Das erste Mal in das neue Repo committen:   
