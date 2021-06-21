@@ -26,7 +26,7 @@ Damit nicht vor jedem `push` oder `pull` zum remote Repository die Github Zugang
 
 Der Schlüssel muss mit der LogIn Emailadresse von github generiert werden:  
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`  
-Das Speichern des `privat_key` (id_rsa) mit Enter bestätigen und zweimal dieselbe Passphrase eingeben (kurz merken).  
+Das Speichern des `privat_key` (id_rsa) mit Enter bestätigen und zweimal dieselbe Passphrase eingeben (gut merken, wird immer mal wieder gebraucht).  
 
 Den `ssh-agent` starten und den Schlüssel übergeben, dabei nocheinmal die Passphrase eingeben:  
 `eval "$(ssh-agent -s)"`  
