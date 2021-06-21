@@ -20,6 +20,28 @@ User global (für den ganzen Server) für Git festlegen:
 `git config --global user.email "mail@domain.com"`  
 ohne `--global` auch innerhalb eines Reops möglich.  
 
+### Zugang über SSH-key anlegen
+Damit nicht vor jedem `push`oder `pull` zum remote Repository die Github Zugangsdaten eingegeben werden müssen, kann ein Schlüsselpaar erzeugt und der `public_key` in github.com gespeichert werden. Alle `privat_keys` liegen auf dem Server im Verzeichnis `~/.ssh`.  
+`ls -lah ~/.ssh`
+
+Der Schlüssel muss mit der LogIn Emailadresse von github generiert werden:  
+`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+Das Speichern des `privat_key` (id_rsa) mit Enter bestätigen und zweimal dieselbe Passphrase eingeben (kurz merken). 
+
+Den `ssh-agent` starten und den Schlüssel übergeben, dabei nocheinmal die Passphrase eingeben:
+`eval "$(ssh-agent -s)"`
+`ssh-add ~/.ssh/id_rsa`
+
+Wenn die Ausgabe `Identity added: ...` ausgibt, den `privat_key` auslesen und kopieren:
+`cat ~/.ssh/id_rsa.pub`
+
+Dann auf github.com unter `Settings` - `SSH and GPG keys` - `New SSH key` den `privat_key` unter Angabe eines sinnvollen Titels einfügen.
+
+Zur Kontrolle den Zugang testen (ggf mit Enter bestätigen):
+`ssh -T git@github.com`
+
+
+
 ## erstes Git-Repository anlegen
 in das Vezeichnis wechseln, dass das neue Repository werden soll:  
 `cd domain.com/folder`  
@@ -41,10 +63,16 @@ Von dem lokalen Repo in den `master` Branch des remote Repos pushen:
 `git push origin main`   
 Username und Password von github eingeben
 
-## Änderungen dem lokalen Repository `committen`
+## ein Repository clonen
+
+In einem Repository auf github den `SSH`-Link hinter dem grünen `Code` Button kopieren, in der Konsole in das Verzeichnis wechseln, in welches das Repo hinengeklont werden soll und den `SSH`-Link einfügen:
+`git@github.com:Username/Repository.git`
+
+
+## Änderungen dem lokalen Repository committen
 
 `git add .`  
 `git commit -m "first commit"` 
 
-## lokales Repository auf github `pushen`
+## lokales Repository auf github pushen
 `git push origin main` 
