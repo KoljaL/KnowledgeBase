@@ -46,7 +46,7 @@ Zur Kontrolle den Zugang testen (ggf mit Enter bestätigen):
 in das Vezeichnis wechseln, dass das neue Repository werden soll:  
 `cd domain.com/folder`  
 
-Git für das aktuelle Verzeichnis initialisieren:  
+Git für das aktuelle Verzeichnis initialisieren:   
 `git init .`  
 und alle darin enthaltenen Dateien dem Repo hinzufügen:  
 `git add .`  
@@ -72,7 +72,7 @@ In einem Repository auf github den `SSH`-Link hinter dem grünen `Code` Button k
 `git@github.com:Username/Repository.git`
 
 
-## Änderungen dem lokalen Repository committen
+## Änderungen dem lokalen Repository committen 
 
 `git add .`  
 `git commit -m "first commit"` 
