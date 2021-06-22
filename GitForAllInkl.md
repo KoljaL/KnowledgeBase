@@ -1,5 +1,3 @@
-# PUSH OVER PHP :-)
-
 # Github bei All-Inkl
 Notwendig: All-Inkl SSH Zugang, Github.com Account
 
