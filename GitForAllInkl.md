@@ -9,7 +9,7 @@ Mac: `Cmd`+`Space` type `Terminal`
 `ssh ssh-w02c0548@w0584adb.kasserver.com`  
 Passwort eingeben und Key akzeptieren
 
-### bash Befehle
+### bash Befehle 
 mit `ls` wird der Inhlat des Verzeichnisses angezeigt,  
 `cd folder` wechselt in den Ordner `folder`,  
 `cd ..` wechselt in den darüberliegenden Ordner.  
