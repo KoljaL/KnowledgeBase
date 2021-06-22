@@ -1,4 +1,6 @@
-# Github bei All-Inkl33
+# PUSH OVER PHP :-)
+
+# Github bei All-Inkl
 Notwendig: All-Inkl SSH Zugang, Github.com Account
 
 ## auf dem Server anmelden
